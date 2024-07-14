@@ -1,0 +1,117 @@
+  /*--------Media for 600px max-width--------*/
+  @media only screen and (max-width: 600px) {
+    #header {
+      margin-bottom: 0;
+    }
+  
+    .header-text {
+      margin-top: 100%;
+      margin-left: 8%;
+    }
+    
+    .header-text h1 {
+      font-size: 39px;
+      line-height: 40px;
+      padding-top: 15px;
+    }
+
+    .sub-title {
+      margin-bottom: 20px;
+    }
+
+    #about,
+    #services,
+    #portfolio {
+      margin-bottom: 0;
+    }
+  
+    nav #top-icon {
+      display: block;
+      background-color: transparent;
+      color: white;
+      font-size: 40px;
+      margin-top: 10px;
+      transition: color 0.5s;
+    }
+  
+    nav ul {
+      background: rgb(255, 166, 0);
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      border-top-left-radius: 10px;
+      border-left: solid rgb(255, 219, 147) 5px;
+      z-index: 2;
+      transition: right 0.5s;
+    }
+
+    .frontend-picture {
+      position: absolute;
+      left: 23%;
+      top: 25%;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 25px;
+    }
+  
+    nav ul #top-icon {
+      position: absolute;
+      top: 20px;
+      left: 25px;
+      font-size: 23px;
+    }
+  
+    .sub-title {
+      font-size: 40px;
+    }
+  
+    .about-col-1, .about-col-2 {
+      flex-basis: 100%;
+    }
+  
+    .about-col-1 {
+      margin-bottom: 30px;
+    }
+  
+    .about-col-2 {
+      font-size: 14px;
+    }
+  
+    .tab-links {
+      font-size: 16px;
+      margin-right: 30px;
+    }
+  
+    .content-left, .content-right {
+      flex-basis: 100%;
+    } 
+    
+  }
+
+  #services {
+    /* padding: 0; */
+    /* margin-bottom: 0; */
+  }  
+
+/*--------Media for 950px max-width--------*/
+  @media (max-width: 950px) {
+    #header {
+      margin-bottom: 50px;
+    }
+
+    .header-text {
+      max-width: 310px;
+    }
+
+    #portfolio {
+      padding: 100px 0;
+    }
+  }

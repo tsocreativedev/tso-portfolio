@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style-mobile.css" />
+  </head>
+  <body>
+    <!--------------------Header------------------->
+    <div id="header">
+      <div class="frontend-picture">
+        <img src="assets/images/profile-pix2.png" />
+      </div>
+      <div class="container">
+        <nav>
+          <p class="logo">T<span>S</span>O</p>
+          <ul id="sidemenu">
+            <li>
+              <a href="#header" class="active">Home <span>🏠</span></a>
+            </li>
+            <li>
+              <a href="#about">About <span>📋</span></a>
+            </li>
+            <li>
+              <a href="#services">Service <span>🛠️</span></a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio <span>🖥️</span></a>
+            </li>
+            <li>
+              <a href="#content">Contact <span>📞</span></a>
+            </li>
+            <i
+              id="top-icon"
+              class="bx bx-window-close"
+              onclick="closeMenu()"
+            ></i>
+          </ul>
+          <i id="top-icon" class="bx bx-menu" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, I'm <span>Tiamiyu<br /></span>Sodiq O.
+          </h1>
+          <p class="profession">Software Engineer</p>
+          <p class="info">
+            <span>>></span> I build pixel-perfect, engaging, and accessible
+            digital experiences. ✨
+          </p>
+        </div>
+      </div>
+    </div>
+    <!----------------------About--------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/images/img1.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="content">
+              Passionate software engineer with a knack for problem-solving and
+              a dedication to crafting clean, efficient code. Committed to
+              continuous learning and staying at the forefront of technological
+              advancements. 💡
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')"></p>
+            </div>
+            <div class="tab-contents acitve-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Crafting Web Experiences 🌐
+                </li>
+                <li>
+                  <span>Mobile Apps Development</span><br />Building Android/iOS
+                  Apps 📱
+                </li>
+                <li>
+                  <span>Software Development</span><br />Creating Software
+                  Solutions 💻
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span
+                    ><strong>2023 - Current:</strong> Software Developer at
+                    TSO_CreativeDev</span
+                  ><br />Designing and developing web and mobile applications
+                  for diverse clients 🚀
+                </li>
+                <li>
+                  <span
+                    ><strong>2006 - 2012:</strong> Graphic Designer at Adebiz
+                    Printing Press</span
+                  ><br />Creating visual concepts, layouts, and graphics for
+                  printing and digital media 🎨
+                </li>
+                <li><span></span><br /></li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016</span><br />UI/UX Design Training at ET Institute
+                </li>
+                <li><span>2016</span><br />MBA from MIT Bangalore.</li>
+                <li><span>2014</span><br />BBA from ISM Bangalore.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------Services--------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <img src="assets/images/icon 2/web-development.png" />
+            <h2>Web Development</h2>
+            <p>
+              Skilled in web development: HTML, CSS, JavaScript, React.
+              Experienced in crafting responsive websites, web apps, and APIs..
+            </p>
+          </div>
+
+          <div>
+            <img src="assets/images/icon 2/app-development.png" />
+            <h2>Mobile Apps Development</h2>
+            <p>
+              Experienced in mobile app development for Android and iOS
+              platforms. Skilled in building robust and user-friendly mobile
+              applications.
+            </p>
+          </div>
+
+          <div>
+            <img src="assets/images/icon 2/software.png" />
+            <h2>Software Development</h2>
+            <p>
+              Expertise in software development: proficient in designing,
+              building, and maintaining scalable, efficient, and innovative
+              software solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------Portfolio--------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Hands on Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/images/bg01.png" />
+            <div class="layer">
+              <h3>Restaurant Website Project</h3>
+              <p>
+                It enhances the dining experience by connecting food
+                enthusiasts, showcasing culinary delights, and providing a
+                platform for reservations, feedback, and community engagement.
+              </p>
+              <a href="https://www.ikoyirestaurant.com/" target="_blank"
+                ><img src="assets/images/Icons/link-alt-regular-24.png"
+              /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/images/bg02.png" />
+            <div class="layer">
+              <h3>Comprehensive Health Mobile App</h3>
+              <p>
+                It empowers users to manage their health and well-being,
+                providing personalized insights, tracking progress, and
+                connecting with health professionals for comprehensive support..
+              </p>
+              <a href="https://www.ohealthng.com/" target="_blank"
+                ><img src="assets/images/Icons/link-alt-regular-24.png"
+              /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/images/bg03.png" />
+            <div class="layer">
+              <h3>Unfinshish Ecommerce Website Development</h3>
+              <p>
+                Developed a comprehensive e-commerce platform designed to
+                provide a seamless and enjoyable shopping experience. The
+                website is built to handle high traffic volumes, offering robust
+                functionality, security, and an intuitive user interface.
+              </p>
+              <a href="ecommerce-project/index.html" target="_blank"
+                ><img src="assets/images/Icons/link-alt-regular-24.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://igbajopolytechnic.edu.ng/" target="_blank" class="btn"
+          ><img src="assets/images/Icons/chevron-right-regular-24.png" />One
+          more Project</a
+        >
+      </div>
+    </div>
+    <!----------------------Content--------------------->
+    <div id="content">
+      <div class="container">
+        <div class="row">
+          <div class="content-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="social-media-link">
+              <a href="https://web.facebook.com/tso.creativedev" target="_blank"
+                ><p>
+                  <img
+                    src="assets/images/Icons/facebook-circle-logo-24.png"
+                  />tiamiyu sodiq
+                </p></a
+              >
+              <a href="https://www.instagram.com/tsocreativedev" target="_blank"
+                ><p>
+                  <img
+                    src="assets/images/Icons/instagram-logo-24.png"
+                  />tsocreativedev
+                </p></a
+              >
+              <a href="https://wa.me/2348133028273" target="_blank"
+                ><p>
+                  <img src="assets/images/Icons/whatsapp-logo-24.png" />+234 813
+                  302 8273
+                </p></a
+              >
+              <a href="https://www.youtube.com/@tsocreativedev" target="_blank"
+                ><p>
+                  <img
+                    src="assets/images/Icons/youtube-logo-24.png"
+                  />tsocreativedev
+                </p></a
+              >
+            </div>
+          </div>
+          <div class="content-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                row="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="go-to-home-btn"
+        ><img src="assets/images/Icons/up-arrow-solid-24.png"
+      /></a>
+      <div class="copyright">
+        <p>Copyright @TSO_CreativeDev 2024.</p>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
