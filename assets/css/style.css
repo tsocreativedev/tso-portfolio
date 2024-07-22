@@ -54,7 +54,7 @@ body {
   cursor: pointer;
   transition: opacity ease-in-out 1s;
   overflow: hidden;
-  animation: scale-animation 5s ease-in-out infinite;
+  animation: scale-animation 2s ease-in-out infinite;
 }
 
 .frontend-picture img:hover {
@@ -227,7 +227,7 @@ nav ul li span {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.03);
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
